@@ -91,10 +91,14 @@ body {
 }
 
 .header-imgs {
-  display: none;
+  display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-content: center;
-  align-self: flex-end;
+  height: 20vh;
+  position: absolute;
+  right: 40px;
+  top: 40vh;
 }
 
 .img-item {
@@ -138,6 +142,7 @@ body {
 .deeper {
   background-image: url("../img/Mergulho-Cinza-sem_texto.jpg");
   background-size: cover;
+  background-position: center;
   height: 100vh;
 }
 
@@ -212,13 +217,13 @@ body {
 }
 
 
-/*  Valor  */
+/*  Value  */
 
-.valor {
+.value {
   max-height: 110vh
 }
 
-.valor .container {
+.value .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -229,36 +234,41 @@ body {
 
 }
 
-.valor-title {
+.value-title {
   align-self: flex-start;
 }
 
-.valor-box {
+.value-box {
   width: 46vw;
 }
 
+.value-box-imgs {
+ display: flex;
+ align-items: center;
+}
+
 @media(max-width: 790px) {
-  .valor-box {
+  .value-box {
     width: 90vw;
   }
 }
 
-.valor-text {
+.value-text {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5rem;
 }
 
-.valor-span {
+.value-span {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.125rem;
   color: rgba(255, 0, 112, 1);
 }
 
-.valor-link {
+.value-link {
   color: rgba(255, 0, 112, 1);
 }
 
-.valor-img {
+.value-img {
   width: 100px
 }
 
