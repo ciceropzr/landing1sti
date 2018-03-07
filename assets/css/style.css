@@ -244,7 +244,7 @@ body {
     font-size: 4.625rem;
     color: rgba(116, 38, 152, 1);
     position: absolute;
-    top: -9vh;
+    top: -12vh;
   }
 }
 
@@ -312,6 +312,12 @@ body {
 
 .value {
   max-height: 110vh
+}
+
+@media (max-width: 500px) {
+  .value {
+    max-height: 100%
+  }
 }
 
 .value .container {
