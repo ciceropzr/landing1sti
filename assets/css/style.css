@@ -160,7 +160,7 @@ body {
   .home-text {
     height: 100%;
     width: 100%;
-    font-size: 1.375rem;
+    font-size: 1.375rem;  
   }
 }
 
@@ -257,8 +257,9 @@ body {
 
 @media(max-width: 500px) {
   .deeper-text {
-    font-size: 1.325rem;
+    font-size: 1.25rem;
     width: 100%;
+    line-height: 36px;
   }
 }
 
@@ -295,6 +296,12 @@ body {
 .deep-degital-text {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5rem;
+}
+
+@media(max-width: 500px) {
+  .deep-degital-text {
+    line-height: 32px;
+  }
 }
 
 .deep-degital-span {
@@ -355,6 +362,12 @@ body {
   font-size: 1.5rem;
 }
 
+@media(max-width: 500px) {
+  .value-text {
+    line-height: 32px;
+  }
+}
+
 .value-span {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.125rem;
@@ -365,8 +378,23 @@ body {
   color: rgba(255, 0, 112, 1);
 }
 
+@media(max-width: 500px) {
+  .value-box-imgs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+
+
 .value-img {
   width: 100px
+}
+
+@media(max-width: 500px) {
+  .value-img {
+    width: 40vw;
+  }
 }
 
 
@@ -530,6 +558,12 @@ body {
   }
 }
 
+@media(max-width: 500px) {
+  .contact .container {
+    min-height: 80vh;
+  }
+}
+
 
 .contact-title {
   padding-top: 8%;
@@ -578,4 +612,10 @@ body {
   top: 10px;
   right: -40px;
   z-index: 1;
+}
+
+@media (max-width: 500px) {
+  .left-hand, .right-hand {
+    display: none;
+  }
 }
