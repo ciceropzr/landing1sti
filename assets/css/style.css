@@ -29,7 +29,7 @@ body {
 
 @media(max-width: 790px) {
   .container {
-    padding: 10px;
+    padding: 20px;
   }
 }
 
@@ -74,6 +74,12 @@ body {
   padding: 0px;
 }
 
+@media(max-width: 500px) {
+  .menu-list {
+    display: none
+  }
+}
+
 .menu-item {
   font-family: 'SkyhookMonoBold', sans-serif;
   font-size: 16px;
@@ -101,6 +107,12 @@ body {
   top: 40vh;
 }
 
+@media(max-width: 500px) {
+  .header-imgs {
+    display: none
+  }
+}
+
 .img-item {
   width: 40px;
 }
@@ -116,17 +128,40 @@ body {
   height: 90vh;
 }
 
+@media(max-width: 500px) {
+  .home {
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    height: 80vh;
+  }
+}
+
 .home .container {
   justify-content: flex-end;
+}
+
+@media(max-width: 500px) {
+  .home .container {
+    justify-content: center;
+  }
 }
 
 .home-text {
   align-self: flex-start;
   font-family: "SkyhookMonoBold";
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 38px;
   width: 55%;
   height: 40vh;
+}
+
+@media(max-width: 500px) {
+  .home-text {
+    height: 100%;
+    width: 100%;
+    font-size: 1.75rem;
+  }
 }
 
 .home-span {
@@ -136,6 +171,14 @@ body {
   line-height: 14px;
 }
 
+@media(max-width: 500px) {
+  .home-span {    
+     font-size: 1.25rem;
+     position: absolute;
+     bottom: 0px;
+     left: 40vw;
+  }
+}
 
 /*  Deeper  */
 
@@ -146,6 +189,15 @@ body {
   height: 100vh;
 }
 
+@media(max-width: 500px) {
+  .deeper {
+    background-image: none;
+    background-color: rgba(255, 221, 0, 1);
+    height: 100%;
+    position: relative;
+  }
+}
+
 .deeper .container {
   display: flex;
   flex-direction: row-reverse;
@@ -153,6 +205,25 @@ body {
   align-items: flex-end;
   min-height: 100vh;
   padding-bottom: 40px;
+}
+
+@media(max-width: 500px) {
+  .deeper .container {
+    flex-direction: column;
+  }
+}
+
+.deeper-img {
+  display: none;
+}
+
+@media(max-width: 500px) {
+  .deeper-img {
+    display: block;
+    background-color: white;
+    position: absolute;
+    width: 110vw;
+  }
 }
 
 .deeper-title {
@@ -231,7 +302,6 @@ body {
   align-items: center;
   padding-top: 40px;
   min-height: 100vh;
-
 }
 
 .value-title {
@@ -306,14 +376,14 @@ body {
   border: solid 1px;
   border-color: rgb(216, 216, 216);
   width: 25vw;
-  min-height: 50vh;
+  min-height: 60vh;
   margin: 0px;
   padding: 40px;
   position: relative;
 }
 
 @media(max-width: 790px) {
-  .services-box{
+  .services-box {
     width: 100vw;
     min-height: 40vh;
   }
@@ -321,6 +391,12 @@ body {
 
 .services-box:hover {
   background-color: rgba(217, 217, 217, 1);
+}
+
+@media(max-width: 790px) {
+  .services-box:hover {
+    background-color: white;
+  }
 }
 
 .services-box-title {
@@ -340,6 +416,14 @@ body {
   position: absolute;
   bottom: 40px;
   width: 35%;
+}
+
+@media(max-width: 790px) {
+  .services-box-img{
+  right: 15vw;
+  bottom: 10vh;
+  width: 25vw;
+  }
 }
 
 /*  Methods  */
