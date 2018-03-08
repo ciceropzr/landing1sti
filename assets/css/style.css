@@ -39,6 +39,13 @@ body {
   letter-spacing: 2px;
 }
 
+@media(max-width: 500px) {
+  .titles {
+    font-size: 2rem;
+  }
+}
+
+
 /*  Header  */
 
 .header {
@@ -243,6 +250,7 @@ body {
   .deeper-title {
     font-size: 4.625rem;
     color: rgba(116, 38, 152, 1);
+    max-width: 320px;
     position: absolute;
     top: -12vh;
   }
@@ -409,7 +417,13 @@ body {
 }
 
 .services-title {
-  padding-left: 40px
+  padding-left: 40px;
+}
+
+@media (max-width: 500px) {
+  .services-title {
+    padding-left: 20px;
+  }
 }
 
 .services-list {
@@ -443,6 +457,13 @@ body {
   }
 }
 
+@media(max-width: 500px) {
+  .services-box {
+    padding: 20px;
+    height: 70vh;
+  }
+}
+
 .services-box:hover {
   background-color: rgba(217, 217, 217, 1);
 }
@@ -453,6 +474,11 @@ body {
   }
 }
 
+.services-box-span {
+ font-family: "SkyhookMonoBold";
+ font-size: .8rem;
+}
+
 .services-box-title {
   font-family: "Introdução", sans-serif;
   font-size: 20px;
@@ -461,9 +487,15 @@ body {
 
 .services-box-text {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   width: 60%;
   font-weight: 700;
+}
+
+@media(max-width: 500px) {
+  .services-box-text {
+    line-height: 32px;
+  }
 }
 
 .services-box-img {
@@ -479,6 +511,29 @@ body {
   width: 25vw;
   }
 }
+
+@media(max-width: 500px) {
+  .services-box-img {
+    left: 10px;
+    width: 35vw;
+    bottom: 10px;
+  }
+
+  .icon-cloud {
+    left: 6px;
+  }
+
+  .icon-bios{
+    left: 14px;
+  }
+  .icon-startaupin{
+    left: -14px;
+  }
+  .icon-value{
+    left: 6px;
+  }
+}
+
 
 /*  Methods  */
 
