@@ -657,6 +657,12 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 500px) {
+  .contact {
+    height: 570px
+  }
+}
+
 .contact .container {
   display: flex;
   padding-top: 10vh;
@@ -671,11 +677,10 @@ body {
 
 @media(max-width: 500px) {
   .contact .container {
-    min-height: 100vh;
     justify-content: flex-start;
   }
+  }
 }
-
 
 .contact-title {
   padding-top: 8%;
