@@ -559,7 +559,7 @@ body {
 
 @media(max-width: 500px) {
   .contact .container {
-    min-height: 8x0vh;
+    min-height: 80vh;
   }
 }
 
