@@ -65,6 +65,12 @@ body {
   padding: 40px;
 }
 
+@media (max-width: 500px) {
+  .header-container {
+    padding: 20px;
+  }
+}
+
 .header-menu {
   display: flex;
   flex-direction: column;
@@ -72,6 +78,12 @@ body {
 
 .menu-logo {
   width: 300px;
+}
+
+@media (max-width: 500px) {
+  .menu-logo {
+    max-width: 85vw;
+  }
 }
 
 .menu-box {
@@ -760,8 +772,10 @@ body {
 
 @media (max-width: 500px) {
   .contact-span {
-    position: initial;
-    align-self: flex-start;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 
