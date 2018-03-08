@@ -464,13 +464,9 @@ body {
   }
 }
 
-.services-box:hover {
-  background-color: rgba(217, 217, 217, 1);
-}
-
-@media(max-width: 790px) {
+@media(min-width: 500px) {
   .services-box:hover {
-    background-color: white;
+    background-color: rgba(217, 217, 217, 1);
   }
 }
 
