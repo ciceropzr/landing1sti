@@ -33,6 +33,12 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .container {
+    padding-bottom: 10vh;
+  }
+}
+
 .titles {
   font-family: "Introdução", sans-serif;
   font-size: 2.25rem;
@@ -332,7 +338,6 @@ body {
 @media (max-width: 500px) {
   .value {
     max-height: 100%;
-    padding-bottom: 20px;
   }
 }
 
@@ -416,6 +421,12 @@ body {
   padding: 0px;
 }
 
+@media (max-width: 500px) {
+  .services .container {
+    padding-bottom: 15vh;
+  }
+}
+
 .services-title {
   padding-left: 40px;
 }
@@ -459,6 +470,7 @@ body {
 
 @media(max-width: 500px) {
   .services-box {
+    background-color: rgba(252, 252, 252, 0.75);
     padding: 20px;
     height: 70vh;
   }
@@ -549,6 +561,12 @@ body {
   margin: 12px;   
 }
 
+@media (max-width: 500px) {
+  .methods-title {
+    margin: 0px;
+  }
+}
+
 .methods-box {
   display: flex;
   flex-direction: column;
@@ -560,6 +578,7 @@ body {
 @media(max-width: 790px) {
   .methods-box {
     width: 90%;
+    left: 0;
   }
 }
 
@@ -568,12 +587,37 @@ body {
   align-items: center;
 }
 
+@media (max-width: 500px) {
+  .methods-item {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    position: relative;
+    height: 60vh;
+  }
+}
+
 .methods-item-descripion {
   width: 70%;
 }
 
+@media (max-width: 500px) {
+  .methods-item-description {
+    margin: auto 0;
+  }
+}
+
+
 .methods-item-img {
   width: 100px;
+}
+
+@media (max-width: 500px) {
+  .methods-item-img {
+    position: absolute;
+    width: 35vw;
+    bottom: -40px;
+    left: -18px;
+  }
 }
 
 .item-description-title {
@@ -584,7 +628,12 @@ body {
 .item-description-text {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
+}
 
+@media (max-width: 500px) {
+  .item-description-text {
+    line-height: 32px;
+  }
 }
 
 /*  Contact  */
@@ -610,7 +659,8 @@ body {
 
 @media(max-width: 500px) {
   .contact .container {
-    min-height: 80vh;
+    min-height: 100vh;
+    justify-content: flex-start;
   }
 }
 
@@ -633,17 +683,49 @@ body {
 
 .contact-text {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
   margin: 35px 0;
+}
+
+@media (max-width: 500px) {
+  .contact-text {
+    font-size: 1.125rem;
+    line-height: 28px;
+  }
 }
 
 .contact-address {
   font-family: 'Source Sans Pro', sans-serif;
   color: #742698;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 16px;
+}
+
+@media (max-width: 500px) {
+  .contact-address {
+    font-size: 1.125rem;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+.contact-imgs {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .contact-imgs {
+    display: flex;
+    position: absolute;
+    bottom: 80px;
+    left: 4px;
+  }
+
+  .contact-img-item {
+    width: 20vw;
+  }
 }
 
 .left-hand {
@@ -668,4 +750,31 @@ body {
   .left-hand, .right-hand {
     display: none;
   }
+}
+
+.contact-span {
+  position: absolute;
+  bottom: 0;
+  left: 40vw;
+}
+
+@media (max-width: 500px) {
+  .contact-span {
+    position: initial;
+    align-self: flex-start;
+  }
+}
+
+.contact-span-text {
+  font-family: "SkyhookMonoBold";
+  font-size: .75rem;
+  color: rgba(105, 91, 0, 1); 
+}
+
+.contact-span-link {
+  color: rgba(105, 91, 0, 1);
+}
+
+.contact-span-img {
+  display: none;
 }
