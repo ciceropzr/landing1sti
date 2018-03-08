@@ -82,7 +82,7 @@ body {
 
 @media (max-width: 500px) {
   .menu-logo {
-    max-width: 85vw;
+    max-width: 95%;
   }
 }
 
