@@ -775,7 +775,8 @@ body {
 
 .contact-span {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
+  left: 37%;
   margin: auto 0;
 }
 
