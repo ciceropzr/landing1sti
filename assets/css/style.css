@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: SkyhookMonoRegular;
+    src: url("../fonts/SkyhookMono_regular.ttf");
+}
+
+@font-face {
     font-family: Introdução;
     src: url("../fonts/Fontfabric-Intro-Black-Caps.otf");
 }
@@ -60,9 +65,15 @@ body {
   width: 100%;
 }
 
-.header-container {
+.header .container {
   width: 100%;
   padding: 40px;
+}
+
+@media (max-width: 500px) {
+  .header .container {
+    padding: 40px 20px; 
+  }
 }
 
 .header-menu {
@@ -71,7 +82,8 @@ body {
 }
 
 .menu-logo {
-  width: 300px;
+  width: 375px;
+  height: 47px;
 }
 
 @media (max-width: 500px) {
@@ -108,12 +120,11 @@ body {
   border-color: rgba(255, 221, 0, 1);
   padding: 7px 10px;
   margin: 0px 8px;
-}
-
-.menu-item:nth-child(4) {
   position: absolute;
   right: 40px;
+  top: 45px;
 }
+
 
 .header-imgs {
   display: flex;
@@ -162,7 +173,7 @@ body {
 
 @media(max-width: 500px) {
   .home .container {
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 
@@ -171,15 +182,17 @@ body {
   font-family: "SkyhookMonoBold";
   font-size: 1.375rem;
   line-height: 38px;
-  width: 55%;
+  max-width: 54%;
+  min-width: 700px;
   height: 40vh;
 }
 
 @media(max-width: 500px) {
   .home-text {
     height: 100%;
-    width: 100%;
-    font-size: 1.375rem;  
+    min-width: 100%;
+    font-size: 1.375rem;
+    padding-top: 200px;
   }
 }
 
@@ -188,14 +201,14 @@ body {
   text-align: center;
   font-size: 11px;
   line-height: 14px;
+  letter-spacing: 10px;
 }
 
 @media(max-width: 500px) {
   .home-span {    
      font-size: 1rem;
-     position: absolute;
-     bottom: 0px;
-     left: 40vw;
+     margin: 0 auto;
+     z-index: 2;
   }
 }
 
@@ -214,6 +227,7 @@ body {
     background-color: rgba(255, 221, 0, 1);
     height: 100%;
     position: relative;
+    margin-top: -80px;
   }
 }
 
@@ -251,9 +265,9 @@ body {
 
 .deeper-title {
   font-family: "Introdução", sans-serif;
-  font-size: 3.75rem;
+  font-size: 5.625rem;
   color: rgba(255, 221, 0, 1);
-  text-shadow: rgba(255, 221, 0, 0.23),5px 3px;
+  text-shadow: rgba(255, 221, 0, 0.23) 5px 3px;
   padding: 0px;
   margin: 0px;
 }
@@ -296,7 +310,6 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-  padding-top: 40px;
 }
 
 .deep-degital-title {
@@ -353,7 +366,7 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 125px;
   min-height: 100vh;
 }
 
@@ -406,7 +419,7 @@ body {
 }
 
 .value-img {
-  width: 100px
+  width: 140px
 }
 
 @media(max-width: 500px) {
@@ -419,12 +432,11 @@ body {
 /*  Services  */
 
 .services {
-  padding-top: 10vh;
   min-height: 100vh;
 }
 
 .services .container {
-  padding: 0px;
+  padding: 200px 0;
 }
 
 @media (max-width: 500px) {
@@ -489,8 +501,9 @@ body {
 }
 
 .services-box-span {
- font-family: "SkyhookMonoBold";
+ font-family: "SkyhookMonoRegular";
  font-size: .8rem;
+
 }
 
 .services-box-title {
@@ -502,8 +515,9 @@ body {
 .services-box-text {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
-  width: 60%;
   font-weight: 700;
+  line-height: 24px;
+  width: 60%;
 }
 
 @media(max-width: 500px) {
@@ -554,7 +568,8 @@ body {
 .methods .container {
   display: flex;
   flex-direction: row;
-  min-height: 70vh;
+  min-height: 100vh;
+  padding-top: 160px;
 }
 
 @media(max-width: 790px) {
@@ -564,7 +579,7 @@ body {
 }
 
 .methods-title {
-  margin: 12px;   
+  margin: 0px;   
 }
 
 @media (max-width: 500px) {
@@ -577,8 +592,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 55%;
-  position: relative;
-  left: 6%;
+  margin: 0 auto;
 }
 
 @media(max-width: 790px) {
@@ -602,8 +616,8 @@ body {
   }
 }
 
-.methods-item-descripion {
-  width: 70%;
+.methods-item-description {
+  width: 340px;
 }
 
 @media (max-width: 500px) {
@@ -628,12 +642,14 @@ body {
 
 .item-description-title {
   font-family: "Introdução", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
+  margin-bottom: 0px
 }
 
 .item-description-text {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
+  margin-top: 0px
 }
 
 @media (max-width: 500px) {
@@ -653,7 +669,7 @@ body {
 
 .contact .container {
   display: flex;
-  padding-top: 10vh;
+  padding-top: 120px;
 }
 
 @media(max-width: 790px) {
@@ -666,6 +682,7 @@ body {
 @media(max-width: 500px) {
   .contact .container {
     justify-content: center;
+    height: 110vh;
   }
   }
 }
@@ -675,8 +692,8 @@ body {
 }
 
 .contact-box {
-  width: 40%;
-  align-self: center;
+  width: 360px;
+  margin: 0 auto;
   z-index: 2;
 }
 
@@ -697,6 +714,7 @@ body {
   .contact-text {
     font-size: 1.125rem;
     line-height: 28px;
+    margin: 20px 0px;
   }
 }
 
@@ -758,15 +776,20 @@ body {
 .contact-span {
   position: absolute;
   bottom: 0;
-  left: 40vw;
+  margin: auto 0;
 }
 
 @media (max-width: 500px) {
   .contact-span {
-    left: 0;
+    left: 20px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact-span-link {
+    display: none;
   }
 }
 
@@ -776,10 +799,25 @@ body {
   color: rgba(105, 91, 0, 1); 
 }
 
+@media (max-width: 500px) {
+  .contact-span-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+  }
+}
+
 .contact-span-link {
   color: rgba(105, 91, 0, 1);
 }
 
 .contact-span-img {
   display: none;
+}
+
+@media (max-width: 500px) {
+  .contact-span-img {
+    display: block;
+    width: 100px;
+  }
 }
