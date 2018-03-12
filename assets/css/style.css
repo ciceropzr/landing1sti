@@ -90,9 +90,28 @@ body {
 
     .menu-logo.--scale-down {
       transform: scale(0.85);
-      left: 0;
+      margin-left: -25px;
     }    
   }
+
+.menu-icon-mobile {
+  display: none;
+}
+
+  /*@media (max-width: 500px) {
+    .menu-icon-mobile {
+      display: block;
+      width: 40px;
+      height: 40px;
+      transition: all 0.5s ease-out;
+      opacity: 0;
+    }
+
+    .menu-icon-mobile.--scale-down {
+      transform: scale(0.85);
+      opacity: 1;
+      align-self: center;
+    }*/
 
 .menu-box {
   display: flex;
@@ -582,15 +601,20 @@ body {
   width: 60%;
 }
 
+.text-4 {
+  margin-top: -6px;
+}
+
   @media(max-width: 500px) {
     .services-box-text {
       line-height: 32px;
     }
+
+    .text-4 {
+      margin-top: 16px;
+    }
   }
 
-.text-4 {
-
-}
 
 .services-box-img {
   position: absolute;
