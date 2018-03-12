@@ -136,7 +136,7 @@ body {
   font-family: 'SkyhookMonoBold', sans-serif;
   font-size: 16px;
   list-style: none;
-  background-color: white;
+  /*background-color: white;*/
   border: solid 1px;
   color: black;
   border-color: rgba(255, 221, 0, 1);
@@ -228,7 +228,7 @@ body {
       height: 100%;
       min-width: 100%;
       font-size: 1.375rem;
-      padding-top: 200px;
+      padding-top: 160px;
     }
   }
 
@@ -263,7 +263,7 @@ body {
       background-color: rgba(255, 221, 0, 1);
       height: 100%;
       position: relative;
-      margin-top: -80px;
+      margin-top: -60px;
     }
   }
 
@@ -279,7 +279,7 @@ body {
   @media(max-width: 500px) {
     .deeper .container {
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       min-height: 60vh;
       padding-bottom: 20px;
@@ -313,7 +313,7 @@ body {
       color: rgba(116, 38, 152, 1);
       max-width: 320px;
       position: absolute;
-      top: -12vh;
+      top: -16vh;
     }
   }
 
@@ -322,14 +322,14 @@ body {
   font-size: 1.125rem;
   line-height: 32px;
   width: 350px;
-  transition: all 0.5s ease-out;
-  opacity: 0;
+/*  transition: all 0.5s ease-out;
+  opacity: 0;*/
  }
  
-.deeper-text.--fade-in {
+/*.deeper-text.--fade-in {
   opacity: 1;
 }
-
+*/
   @media(max-width: 500px) {
     .deeper-text {
       font-size: 1.25rem;
@@ -393,7 +393,7 @@ body {
 /*  Value  */
 
 .value {
-  max-height: 110vh
+  position: relative;
 }
 
   @media (max-width: 500px) {
@@ -430,6 +430,7 @@ body {
   display: flex;
   align-items: center;
   margin-left: -6px;
+  margin-bottom: 40px;
 }
 
   @media(max-width: 500px) {
@@ -458,6 +459,11 @@ body {
   color: rgba(255, 0, 112, 1);
 }
 
+@media (max-width: 500px) {
+  .value-span {
+  }
+}
+
 .value-link {
   color: rgba(255, 0, 112, 1);
 }
@@ -480,7 +486,19 @@ body {
 
   @media(max-width: 500px) {
     .value-img {
-      width: 40vw;
+      margin-right: 10px;
+    }
+
+    .logo-ps {
+      width: 160px;
+    }
+
+    .logo-vnw {
+      width: 110px;
+    }
+
+    .logo-startup {
+      width: 200px;
     }
   }
 
@@ -492,7 +510,7 @@ body {
 }
 
 .services .container {
-  padding: 200px 0;
+  padding: 0;
 }
 
   @media (max-width: 500px) {
@@ -620,6 +638,41 @@ body {
   position: absolute;
   bottom: 40px;
   width: 35%;
+  opacity: 0;
+}
+
+.icon-cloud {
+  animation: box2 3s ease-out;
+  opacity: 1;
+  left: 26px;
+}
+
+.icon-bios{
+  animation: box2 4s ease-out;
+  opacity: 1;
+  left: 36px;
+}
+
+.icon-startaupin{
+  animation: box2 5s ease-out;
+  opacity: 1;
+  left: -6px;
+}
+
+.icon-value{
+  animation: box2 6s ease-out;
+  opacity: 1;
+  left: 10px;
+}
+
+@keyframes box2 {
+ 0%, 90% {
+  opacity: 0;
+ } 
+ 0% {
+  transform-origin: 0 0;
+  transform: scaleY(0);
+ }
 }
 
   @media(max-width: 790px) {
@@ -659,6 +712,7 @@ body {
   display: flex;
   flex-direction: row;
   min-height: 80vh;
+  position: relative;
 }
 
   @media(max-width: 790px) {
@@ -704,7 +758,7 @@ body {
       flex-direction: column-reverse;
       align-items: flex-start;
       position: relative;
-
+      width: 100%;
       height: 60vh;
     }
   }
@@ -716,6 +770,7 @@ body {
   @media (max-width: 500px) {
     .methods-item-description {
       margin: auto 0;
+      width: 100%;
     }
   }
 
@@ -743,7 +798,7 @@ body {
 .item-description-text {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
-  margin-top: 0px
+  margin-top: 0px;
 }
 
   @media (max-width: 500px) {
@@ -751,6 +806,7 @@ body {
       line-height: 32px;
     }
   }
+
 
 /*  Contact  */
 
@@ -825,6 +881,7 @@ body {
       font-size: 1.125rem;
       line-height: 28px;
       color: rgba(0, 0, 0, 1);
+      margin-bottom: -15px;
     }
   }
 
@@ -836,6 +893,7 @@ body {
     .contact-imgs {
       display: flex;
       margin-left: -18px;
+      margin-top: 50px; 
     }
 
     .contact-img-item {
@@ -872,6 +930,9 @@ body {
   bottom: 10px;
   left: 37%;
   margin: auto 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
   @media (max-width: 500px) {
@@ -881,10 +942,6 @@ body {
       display: flex;
       flex-direction: row;
       align-items: center;
-    }
-
-    .contact-span-link {
-      display: none;
     }
   }
 
@@ -902,17 +959,12 @@ body {
     }
   }
 
-.contact-span-link {
-  color: rgba(105, 91, 0, 1);
-}
-
 .contact-span-img {
-  display: none;
+  width: 100px
 }
 
   @media (max-width: 500px) {
     .contact-span-img {
-      display: block;
-      width: 100px;
+      width: 70px;
     }
   }
