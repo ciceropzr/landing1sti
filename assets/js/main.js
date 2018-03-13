@@ -13,7 +13,9 @@
   var sections = {};
   var i = 0;
   var logo = document.querySelector('.menu-logo');
+  var mobileButton = document.querySelector('.menu-button');
   var menuItem = document.querySelectorAll('.menu-item');
+  var mobileIcon = document.querySelector('.menu-icon-mobile');
   var deeperText = document.querySelector('.deeper-text');
   var serviceBox = document.querySelectorAll('.services-box');
 
@@ -31,19 +33,23 @@
           menuItem.forEach((element) => {
             element.classList.add('--fade-in')
           });
-          deeperText.classList.toggle('--fade-in')
-        } if (i === 'home') {
+          mobileIcon.classList.add('--fade-in')
+          mobileButton.classList.add('--fade-in')
+          deeperText.classList.add('--fade-in')
+        }
+        if (i === 'home') {
           logo.classList.remove('--scale-down')
           menuItem.forEach((element) => {
             element.classList.remove('--fade-in')
           });
-        } if (i === 'services') {
+          mobileIcon.classList.remove('--fade-in')
+        }
+        if (i === 'services') {
           serviceBox.forEach((element) => {
             element.classList.add('--fade-in')
-          });
-        } if (i === 'footer') {
+          })
         }
       }
     }
-  };
+  };		
 })(); 
