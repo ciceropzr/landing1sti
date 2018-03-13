@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
     font-family: SkyhookMonoBold;
     src: url("../fonts/SkyhookMono_bold.ttf");
 }
@@ -65,8 +65,7 @@ body {
 
 .header .container {
   min-height: 100%;
-  padding: 40px;
-  padding-bottom: 0;
+  padding: 20px 40px;
 }
 
   @media (max-width: 500px) {
@@ -156,19 +155,23 @@ body {
   font-family: 'SkyhookMonoBold', sans-serif;
   font-size: 16px;
   list-style: none;
-  border: solid 1px;
   color: black;
-  border-color: rgba(255, 221, 0, 1);
   padding: 7px 10px;
   margin: 0px 8px;
   margin-right: -10px;
   transition: all 1s ease-out;
   opacity: 0;
+  text-transform: lowercase;
 }
 
 .menu-item.--fade-in {
   display: block;
   opacity: 1;
+}
+
+.menu-item.--fade-in:nth-child(4) {
+  border: solid 1px;
+  border-color: rgba(255, 221, 0, 1);
 }
 
 .header-imgs {
@@ -560,22 +563,22 @@ body {
 }
 
 .services-box.--fade-in:nth-child(1) {
-  animation: box 1s ease-out;
+  animation: box .5s ease-out;
   opacity: 1;
 }
 
 .services-box.--fade-in:nth-child(2) {
-  animation: box 2s ease-out;
+  animation: box 1s ease-out;
   opacity: 1;
 }
 
 .services-box.--fade-in:nth-child(3) {
-  animation: box 3s ease-out;
+  animation: box 1.5s ease-out;
   opacity: 1;
 }
 
 .services-box.--fade-in:nth-child(4) {
-  animation: box 4s ease-out;
+  animation: box 2s ease-out;
   opacity: 1;
 }
 
@@ -843,14 +846,8 @@ body {
   @media(max-width: 500px) {
     .contact .container {
       justify-content: center;
-      height: 110vh;
-    }
     }
   }
-
-.contact-title {
-  padding-top: 8%;
-}
 
 .contact-box {
   width: 360px;
@@ -883,7 +880,7 @@ body {
 .contact-address {
   font-family: 'Source Sans Pro', sans-serif;
   color: #742698;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 16px;
 }
@@ -905,7 +902,8 @@ body {
     .contact-imgs {
       display: flex;
       margin-left: -18px;
-      margin-top: 50px; 
+      margin-top: 18px;
+      margin-bottom: 20px; 
     }
 
     .contact-img-item {
@@ -958,14 +956,13 @@ body {
   }
 
 .contact-span-text {
-  font-family: "SkyhookMonoBold";
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: .75rem;
   color: rgba(105, 91, 0, 1); 
 }
 
   @media (max-width: 500px) {
     .contact-span-text {
-      font-family: 'Source Sans Pro', sans-serif;
       font-size: 1rem;
       font-weight: 900;
     }
