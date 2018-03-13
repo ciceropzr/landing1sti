@@ -862,6 +862,13 @@ body {
     }
   }
 
+  @media(max-width: 500px) {
+    .contact-box {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+
 .contact-text {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.375rem;
