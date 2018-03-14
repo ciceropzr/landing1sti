@@ -198,7 +198,6 @@ body {
   @media (max-width: 500px){
     .menu-item {
       transition: none;
-      font-size: 1.5rem
       opacity: 1;
     }
 
@@ -210,7 +209,6 @@ body {
     .menu-item-home {
       display: block;
     }
-
   }
 
 .header-imgs {

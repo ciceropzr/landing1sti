@@ -46,6 +46,7 @@
         if (i === 'home') {
           logo.classList.remove('--scale-down')
           menuItem.forEach((element) => {
+          menuList.classList.remove('--drop-menu')
             element.classList.remove('--fade-in')
           });
           mobileIcon.classList.remove('--fade-in')
@@ -65,7 +66,7 @@
 
 
   function myFunction() {
-    menuList.classList.add('--drop-menu')
+    menuList.classList.toggle('--drop-menu')
     menuItem.forEach((element) => {
       element.classList.add('--drop-item')
     });
