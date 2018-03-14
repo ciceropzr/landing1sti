@@ -18,12 +18,8 @@
   var mobileIcon = document.querySelector('.menu-icon-mobile');
   var deeperText = document.querySelector('.deeper-text');
   var serviceBox = document.querySelectorAll('.services-box');
+  var serviceImg = document.querySelectorAll('.services-box-img');
   var mobileButton = document.querySelector('.menu-button');
-  // mobileButton.addEventListener("click", abrir);
-
-  // function abrir() {
-  //   mobileButton.classList.add
-  // }
 
   Array.prototype.forEach.call(section, function(e) {
     sections[e.id] = e.offsetTop;
@@ -54,7 +50,10 @@
         if (i === 'services') {
           serviceBox.forEach((element) => {
             element.classList.add('--fade-in')
-          })
+          });
+          serviceImg.forEach((element) => {
+            element.classList.add('--fade-in')
+          });
         }
       }
     }
@@ -62,8 +61,6 @@
 
   document.getElementById("menu-button").addEventListener("click", myFunction);
   document.getElementById("menu-item").addEventListener("click", myFunction2);  
-
-
 
   function myFunction() {
     menuList.classList.toggle('--drop-menu')
@@ -78,35 +75,4 @@
       element.classList.remove('--drop-menu')
     });
   }
-
-
-  // (function() {
-  //   var hamburger = {
-  //     list: document.querySelector('.menu-button'),
-  //     item: document.querySelector('.menu-list'),
-
-  //     doToggle: function(e) {
-  //       e.preventDefault();
-  //       this.list.classList.add('--drop-menu');
-  //       this.item.classList.toggle('--drop-item');
-  //     }
-  //   };
-
-  //   hamburger.list.addEventListener('click', function(e) { hamburger.doToggle(e); });
-  //   hamburger.item.addEventListener('click', function(e) { hamburger.doToggle(e); });
-  // }());
-
-  // function menuMobile(){
-  //   var botao = document.querySelector('.menu-button')
-  //   var lista = document.querySelector('.menu-list')
-  //   var item = document.querySelector('.menu-item')
-
-  //   function dropMenu(onclick) {
-  //     var lista = document.querySelector('.menu-list');
-  //     var item = document.querySelector('.menu-item');
-      
-  //       lista.classList.add('--drop-menu');
-  //       item.classList.add('--drop-item')
-  //   }
-  // };
 })(); 

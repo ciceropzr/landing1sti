@@ -644,11 +644,8 @@ body {
       background-color: rgba(252, 252, 252, 0.75);
       height: 70vh;
     }
-  }
-
-  @media(min-width: 500px) {
     .services-box:hover {
-      background-color: rgba(217, 217, 217, 1);
+      background-color: rgba(256, 256, 256, 1);
     }
   }
 
@@ -694,38 +691,35 @@ body {
   opacity: 0;
 }
 
-.icon-cloud {
-  animation: box2 3s ease-out;
+.services-box-img.--fade-in {
+  animation: imgs 4s ease-out;
   opacity: 1;
-  left: 26px;
 }
 
-.icon-bios{
-  animation: box2 4s ease-out;
-  opacity: 1;
-  left: 36px;
-}
-
-.icon-startaupin{
-  animation: box2 5s ease-out;
-  opacity: 1;
-  left: -6px;
-}
-
-.icon-value{
-  animation: box2 6s ease-out;
-  opacity: 1;
-  left: 10px;
-}
-
-@keyframes box2 {
- 0%, 90% {
+@keyframes imgs {
+ 0%, 75% {
   opacity: 0;
  } 
  0% {
   transform-origin: 0 0;
   transform: scaleY(0);
  }
+}
+
+.icon-cloud {
+  left: 26px;
+}
+
+.icon-bios{
+  left: 36px;
+}
+
+.icon-startaupin{
+  left: -6px;
+}
+
+.icon-value{
+  left: 10px;
 }
 
   @media(max-width: 820px) {
