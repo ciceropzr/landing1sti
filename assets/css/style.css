@@ -681,12 +681,12 @@ body {
 }
 
 .services-box-img.--fade-in {
-  animation: imgs 4s ease-out;
+  animation: imgs 2.5s ease-out;
   opacity: 1;
 }
 
 @keyframes imgs {
- 0%, 75% {
+ 0%, 80% {
   opacity: 0;
  } 
  0% {
